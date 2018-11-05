@@ -3,15 +3,10 @@ let config = require('../../config');
 let get = GetCreator(config.integrations.cities.url);
 
 module.exports = {
-  withCountryIdAndLanguage(countryId, language) {
+  withUrlNameAndLanguage(countryUrlName, language) {
     return get(
-      '/api/countries/' + countryId + '/cities'
+      '/api/countries/' + countryUrlName
       + '?language=' + language
-    );
-  },
-  withLanguage(language) {
-    return get(
-      '/api/cities?language=' + language
     );
   }
 };
