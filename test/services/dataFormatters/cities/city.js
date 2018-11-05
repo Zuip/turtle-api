@@ -8,6 +8,7 @@ describe('cityDataFormatter', function() {
       cityDataFormatter(
         {
           id: 11,
+          language: 'fi',
           latitude: 111,
           longitude: 112,
           name: 'City',
@@ -20,6 +21,7 @@ describe('cityDataFormatter', function() {
         }
       ),
       {
+        language: 'fi',
         latitude: 111,
         longitude: 112,
         name: 'City',

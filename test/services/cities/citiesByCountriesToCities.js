@@ -9,11 +9,13 @@ describe('citiesByCountriesToCities', function() {
         [
           {
             id: 1,
+            language: 'fi',
             name: 'Country 1',
             urlName: 'country1',
             cities: [
               {
                 id: 11,
+                language: 'fi',
                 latitude: 111,
                 longitude: 112,
                 name: 'Country 1 City 1',
@@ -21,6 +23,7 @@ describe('citiesByCountriesToCities', function() {
               },
               {
                 id: 12,
+                language: 'fi',
                 latitude: 121,
                 longitude: 122,
                 name: 'Country 1 City 2',
@@ -30,11 +33,13 @@ describe('citiesByCountriesToCities', function() {
           },
           {
             id: 2,
+            language: 'fi',
             name: 'Country 2',
             urlName: 'country2',
             cities: [
               {
                 id: 21,
+                language: 'fi',
                 latitude: 211,
                 longitude: 212,
                 name: 'Country 2 City 1',
@@ -42,6 +47,7 @@ describe('citiesByCountriesToCities', function() {
               },
               {
                 id: 22,
+                language: 'fi',
                 latitude: 221,
                 longitude: 222,
                 name: 'Country 2 City 2',
@@ -54,6 +60,7 @@ describe('citiesByCountriesToCities', function() {
       [
         {
           id: 11,
+          language: 'fi',
           latitude: 111,
           longitude: 112,
           name: 'Country 1 City 1',
@@ -66,6 +73,7 @@ describe('citiesByCountriesToCities', function() {
         },
         {
           id: 12,
+          language: 'fi',
           latitude: 121,
           longitude: 122,
           name: 'Country 1 City 2',
@@ -78,6 +86,7 @@ describe('citiesByCountriesToCities', function() {
         },
         {
           id: 21,
+          language: 'fi',
           latitude: 211,
           longitude: 212,
           name: 'Country 2 City 1',
@@ -90,6 +99,7 @@ describe('citiesByCountriesToCities', function() {
         },
         {
           id: 22,
+          language: 'fi',
           latitude: 221,
           longitude: 222,
           name: 'Country 2 City 2',

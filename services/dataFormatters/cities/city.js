@@ -4,6 +4,7 @@ module.exports = function(city) {
       name: city.country.name,
       urlName: city.country.urlName
     },
+    language: city.language,
     latitude: city.latitude,
     longitude: city.longitude,
     name: city.name,

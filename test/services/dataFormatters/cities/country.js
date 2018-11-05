@@ -8,11 +8,13 @@ describe('cityDataFormatter', function() {
       countryDataFormatter(
         {
           id: 1,
+          language: 'fi',
           name: 'Country',
           urlName: 'country'
         }
       ),
       {
+        language: 'fi',
         name: 'Country',
         urlName: 'country'
       }
