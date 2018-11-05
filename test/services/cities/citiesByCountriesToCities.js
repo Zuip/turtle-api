@@ -59,6 +59,7 @@ describe('citiesByCountriesToCities', function() {
           name: 'Country 1 City 1',
           urlName: 'country1city1',
           country: {
+            id: 1,
             name: 'Country 1',
             urlName: 'country1'
           }
@@ -70,6 +71,7 @@ describe('citiesByCountriesToCities', function() {
           name: 'Country 1 City 2',
           urlName: 'country1city2',
           country: {
+            id: 1,
             name: 'Country 1',
             urlName: 'country1'
           }
@@ -81,6 +83,7 @@ describe('citiesByCountriesToCities', function() {
           name: 'Country 2 City 1',
           urlName: 'country2city1',
           country: {
+            id: 2,
             name: 'Country 2',
             urlName: 'country2'
           }
@@ -92,6 +95,7 @@ describe('citiesByCountriesToCities', function() {
           name: 'Country 2 City 2',
           urlName: 'country2city2',
           country: {
+            id: 2,
             name: 'Country 2',
             urlName: 'country2'
           }

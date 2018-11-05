@@ -1,4 +1,5 @@
 let citiesByCountriesToCities = require('../../services/cities/citiesByCountriesToCities');
+let cityDataFormatter = require('../../services/dataFormatters/cities/city');
 let getCities = require('../../integrations/cities/getCities');
 let passErrorForward = require('../../turtlelib/routing/passErrorForward');
 
@@ -8,15 +9,7 @@ module.exports = function(req, res) {
   ).then(
     countries => citiesByCountriesToCities(countries)
   ).then(
-    cities => cities.map(city => (
-      {
-        country: city.country,
-        latitude: city.latitude,
-        longitude: city.longitude,
-        name: city.name,
-        urlName: city.urlName
-      }
-    ))
+    cities => cities.map(cityDataFormatter)
   ).then(
     cities => res.json(cities)
   ).catch(

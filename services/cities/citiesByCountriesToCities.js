@@ -7,6 +7,7 @@ module.exports = function(citiesByCountries) {
       city => {
 
         city.country = {
+          id: country.id,
           name: country.name,
           urlName: country.urlName
         };

@@ -1,7 +1,7 @@
 let bodyParser = require('body-parser');
 let express = require('express');
 
-let getCitiesController = require('./controllers/cities/getCities');
+let cityRoutes = require('./routes/cityRoutes');
 
 let app = express();
 
@@ -16,4 +16,4 @@ app.listen(
 
 app.set('etag', false);
 
-app.get('/api/cities', getCitiesController);
+cityRoutes(app);
