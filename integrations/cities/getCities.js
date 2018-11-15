@@ -5,13 +5,17 @@ let get = GetCreator(config.integrations.cities.url);
 module.exports = {
   withCountryIdAndLanguage(countryId, language) {
     return get(
-      '/api/countries/' + countryId + '/cities'
-      + '?language=' + language
+      '/api'
+      + '/countries/' + encodeURIComponent(countryId)
+      + '/cities'
+      + '?language=' + encodeURIComponent(language)
     );
   },
   withLanguage(language) {
     return get(
-      '/api/cities?language=' + language
+      '/api'
+      + '/cities'
+      + '?language=' + encodeURIComponent(language)
     );
   }
 };

@@ -5,7 +5,9 @@ let get = GetCreator(config.integrations.cities.url);
 module.exports = {
   withLanguage(language) {
     return get(
-      '/api/countries?language=' + language
+      '/api'
+      + '/countries'
+      + '?language=' + encodeURIComponent(language)
     );
   }
 };

@@ -6,6 +6,17 @@ module.exports = {
     },
     languages: {
       url: ''
+    },
+    users: {
+      url: ''
     }
+  },
+  cookie: {
+    secret: ''
+  },
+  redis: {
+    port: '',
+    host: '',
+    secret: ''
   }
 };

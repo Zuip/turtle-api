@@ -1,7 +1,10 @@
 let bodyParser = require('body-parser');
 let express = require('express');
 
+let config = require('./config');
+
 let cityRoutes = require('./routes/cityRoutes');
+let sessionRoutes = require('./routes/sessionRoutes');
 
 let app = express();
 
@@ -11,9 +14,12 @@ app.use(bodyParser.json());
 
 app.listen(
   3004,
-  () => console.log('turtle-cities listening on port 3004!')
+  () => console.log('turtle-api listening on port 3004!')
 );
+
+require('./session')(app, config);
 
 app.set('etag', false);
 
 cityRoutes(app);
+sessionRoutes(app);

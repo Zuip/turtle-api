@@ -5,9 +5,10 @@ let get = GetCreator(config.integrations.cities.url);
 module.exports = {
   withCountryUrlNameAndCityUrlNameAndLanguage(countryUrlName, cityUrlName, language) {
     return get(
-      '/api/countries/' + countryUrlName
-      + '/cities/' + cityUrlName
-      + '?language=' + language
+      '/api'
+      + '/countries/' + encodeURIComponent(countryUrlName)
+      + '/cities/' + encodeURIComponent(cityUrlName)
+      + '?language=' + encodeURIComponent(language)
     );
   }
 };

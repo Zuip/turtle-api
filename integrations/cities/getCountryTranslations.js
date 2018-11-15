@@ -5,7 +5,9 @@ let get = GetCreator(config.integrations.cities.url);
 module.exports = {
   withId(countryId) {
     return get(
-      '/api/countries/' + countryId + '/translations'
+      '/api'
+      + '/countries/' + encodeURIComponent(countryId)
+      + '/translations'
     );
   }
 };
