@@ -17,6 +17,8 @@ app.listen(
   () => console.log('turtle-api listening on port 3004!')
 );
 
+app.set('trust proxy', true);
+
 require('./session')(app, config);
 
 app.set('etag', false);

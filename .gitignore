@@ -1,4 +1,5 @@
 .nyc_output
 config.js
 node_modules
+/nbproject
 
